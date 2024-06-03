@@ -1,0 +1,341 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+a {
+    color: #06c;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #1d1d1f;
+}
+
+.grey {
+    color: #86868b;
+}
+
+.top-50 {
+    margin-top: 50px;
+}
+
+/* ---------------------------------------------------------------navigacijska vrstica---------------------------------------------------*/
+nav {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #d2d2d7;
+    height: 75px;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 180px;
+    width: auto;
+    position: relative;
+    top: 10px;
+    left: -60px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1d1d1f;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.about-section {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+footer {
+    border-top: 1px solid #d2d2d7;
+    padding: 20px 10px;
+    text-align: center;
+
+}
+
+.footer-links-terms {
+    margin-top: 10px;
+}
+
+.footer-links-terms a {
+    margin: 0 10px;
+}
+
+
+/*---------------------------------------------------------------------------------------------- galerija------------------------------------------------------------*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    height: auto;
+}
+
+/* Slog za posamezne elemente v galeriji */
+.gallery-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Slog za slike znotraj galerijskih elementov */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Slog za opise pod galerijskimi slikami */
+.gallery-item p {
+    padding: 5px 10px;
+    color: #666;
+    font-size: 14px;
+}
+.naslov-galerija {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #1d1d1f;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 2px solid #d2d2d7;
+}
+
+/*-----------------------------------------------------------------------------------kontaktni obrazec---------------------------------------------*/
+
+.contact-title {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 1.5% 0;
+}
+
+.contact-title-info {
+    padding-bottom: 2%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 2%;
+    margin: auto;
+}
+
+.contact-input-group, .contact-textarea-group {
+    padding: 1% 0;
+}
+
+.contact-input-group input, .contact-textarea-group textarea {
+    color: inherit;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding: 1.5%;
+    font-size: 20px;
+}
+
+.contact-input-group input:focus, .contact-textarea-group textarea:focus {
+    background-color: transparent;
+    outline: transparent;
+    border-bottom: 2px solid #06c;
+}
+
+.contact-input-group input::placeholder, .contact-textarea-group textarea::placeholder {
+    color: transparent;
+}
+
+.contact-input-group label, .contact-textarea-group label {
+    color: #757575;
+    position: relative;
+    left: 0.5em;
+    top: -2em;
+    cursor: auto;
+    transition: 0.3s ease all;
+}
+
+.contact-input-group input:focus ~ label, .contact-input-group input:not(:placeholder-shown) ~ label {
+    top: -4em;
+    color: #06c;
+    font-size: 15px;
+}
+
+.contact-textarea-group textarea:focus ~ label, .contact-textarea-group textarea:not(:placeholder-shown) ~ label {
+    top: -10.5em;
+    color: #06c;
+    font-size: 15px;
+}
+
+.contact-button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    padding: 2%;
+    width: 50%;
+    border: 1px solid;
+    border-color: #06c; /* Change border color for better contrast */
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 18px;
+    background-color: #06c; /* Change background color for better contrast */
+    color: black; /* Change text color for better contrast */
+    box-shadow: 0 0 10px #212121;
+}
+
+.contact-button:hover {
+    background-color: #424242;
+    color: #06ce;
+    cursor: pointer;
+}
+
+
+
+/*--------------------------------------------------------------tabela v cenik----------------------------------------------------------------------*/
+.cenik {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Stil za tabelo */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Stil za glavo tabele */
+table thead th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Stil za telo tabele */
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Alternativna barva vrstic */
+table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover efekt za vrstice */
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Stil za celice */
+table td, table th {
+    padding: 10px;
+    text-align: left;
+}
+
+/*----------------------------------------------------------index slide show---------------------------------------------------------------------------*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slider .predmet {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slider .predmet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .active {
+    opacity: 1;
+}
+
+.about-section {
+    padding: 40px;
+    text-align: center;
+}
+
+
